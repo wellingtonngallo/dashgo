@@ -14,18 +14,18 @@ const options = {
       show: false,
     },
     zoom: {
-      enabled: false
+      enabled: false,
     },
     foreColor: theme.colors.gray[500]
   },
   grid: {
-    show: false
+    show: false,
   },
   dataLabels: {
-    enabled: false
+    enabled: false,
   },
   tooltip: {
-    enabled: false
+    enabled: false,
   },
   xaxis: {
     type: 'datetime',
@@ -36,14 +36,14 @@ const options = {
       color: theme.colors.gray[600]
     },
     categories: [
-      '2021-03-18T00:00:00.000Z',
-      '2021-03-19T00:00:00.000Z',
-      '2021-03-20T00:00:00.000Z',
-      '2021-03-21T00:00:00.000Z',
-      '2021-03-22T00:00:00.000Z',
-      '2021-03-23T00:00:00.000Z',
-      '2021-03-24T00:00:00.000Z',
-    ],
+      '2021-03-18T00:00:00.000z',
+      '2021-03-19T00:00:00.000z',
+      '2021-03-20T00:00:00.000z',
+      '2021-03-21T00:00:00.000z',
+      '2021-03-22T00:00:00.000z',
+      '2021-03-23T00:00:00.000z',
+      '2021-03-24T00:00:00.000z',
+    ]
   },
   fill: {
     opacity: 0.3,
@@ -51,13 +51,18 @@ const options = {
     gradient: {
       shade: 'dark',
       opacityFrom: 0.7,
-      opacityTo: 0.3
+      opacityTo: 0.3,
     }
   }
-};
+}
+
 const series = [
-  { name: 'series1', data: [31, 120, 10, 28, 51, 18, 109] }
-];
+  {
+    name: 'series1', 
+    data: [31, 120, 10, 28, 61, 18, 109]
+  }
+]
+
 export default function Dashboard() {
   return (
     <Flex direction="column" h="100vh">
